@@ -8,7 +8,19 @@
 #slumpa antal pinnar och slumpa vilken spelare som börjar 
 
 
-# Beskrivning 
+# Beskrivning:                                  Programmet tar emot input från användaren och sedan slumpar antalet pinnar att börja med 
+#                                               samt vilken spelare som får börja.
+# Argument 1:                                   Strängar - med input från användare samt output i form av puts
+# Argument 2:                                   Integer - talen som slumpmässas i programmet
+# Argument 3                                    
+# Return                                        Sträng - kommentar med vilken spelare som vunnit i form av output med stränginterpolering (kanske)
+# Exempel:                                      
+#                                               Nim() #=> "Spelare 1 har vunnit"
+#                                               Nim() #=> "Spelare 2 har vunnit"
+#
+# Av:                                           Felicia & Hanna
+# Datum:                                        2022-04-19
+
 
 
 def Nim()
@@ -16,16 +28,17 @@ def Nim()
     puts "Hej och välkommen till spelet NIM"                   
 
     puts "Spelare 1, skriv in ditt namn här"
-    input_spelare_1 = gets.chomp 
+    input_player_1 = gets.chomp 
 
     puts "Spelare 2, skriv in ditt namn här"
-    input_spelare_2 = gets.chomp 
+    input_player_2 = gets.chomp 
 
     puts "Detta är de antal pinnar ni kommer att spela med:"
-    antal_pinnar =  puts rand(0..14)
+    amount_sticks =  puts rand(0..14)
 
-    puts "Selare #{rand(1..2)} kommer att få börja"
-    
+    first_player = puts "Spelare #{rand(1..2)} kommer att få börja"
+    #funkar ej, kan nog inte ha puts i högerled
+
 end
 
 Nim()

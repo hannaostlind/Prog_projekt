@@ -2,23 +2,46 @@
  
 # PVP
 # 14 pinnar
-# plocka max 3 pinnar
+# plocka 1-3 pinnar
 # MÅL = inte plocka sista pinnen
-# Steg 1 skriva in namn
 # slumpa antal pinnar och vilken spelare som börjar
  
  
-# Beskrivning:                                  Programmet tar emot input från användaren och sedan slumpar antalet pinnar att börja med
-#                                               samt vilken spelare som får börja. Sedan 
-# Argument 1:                                   Strängar - med input från användare samt output i form av puts
-# Argument 2:                                   Integer - talen som slumpmässas i programmet
+# Beskrivning:                                 Spelet Nim går ut på att två spelare tar emot ett antal pinnar och ska sedan turas om med att dra 1-3 pinnar var. Den som drar de sista pinnarna förlorar så det gäller att räkna i huvudet och tänka smart! Spelet fungerar på följande sätt: har två funktioner där den första, nim(), låter spelarna turas om att dra 1-3 pinnar från ett slumpat antal och den andra funktionen, main(), som tar emot spelarnas namn via gets. När antalet pinnar är mindre än eller lika med antingen 0 frågar den om spelarna vill spela igen eller inte. Beroende på svar skickas antingen en hälsning ut eller så kallas nim-funktionen och spelet börjar om.
+#
+# Argument 1:                                   Strängar - med input från användare via gets samt output i form av puts.
+# Argument 2:                                   Integer - talen som slumpmässas i programmet och talen som spelarna skriver in när de ska dra 1-3 pinnar.
 # Argument 3                                    
-# Return                                        Sträng - kommentar med vilken spelare som vunnit i form av output med stränginterpolering
-# Exempel:                                      
-#                                               puts "#{player_name(cur_player,player1,player2)} har vunnit"
+# Return                                        Sträng - kommentar med vilken spelare som vunnit i form av output med stränginterpolering samt en del puts för att fråga om information från spelarna.
+# Exempel:      
+
+# Hej och välkommen till spelet NIM 
+#Spelare 1, skriv in ditt namn här
+#Hanna
+#Välkommen HANNA du är spelare 1    
+#Spelare 2, skriv in ditt namn här
+#Felicia
+#Välkommen FELICIA du är spelare 2
+#Detta är de antal pinnar ni kommer att spela med:
+#9
+#HANNA kommer att få börja
+#HANNA dra 1-3 pinnar
+#3
+#antal pinnar som finns kvar 6
+#FELICIA dra 1-3 pinnar
+#3
+#antal pinnar som finns kvar 3
+#HANNA dra 1-3 pinnar
+#1
+#antal pinnar som finns kvar 2
+#FELICIA dra 1-3 pinnar
+#2
+#antal pinnar som finns kvar 0
+#FELICIA drog alla pinnar som fanns, så du förlorar!
+#Vill du spela igen? (ja/nej)
 #
 # Av:                                           Felicia & Hanna
-# Datum:                                        2022-05-01
+# Datum:                                        2022-05-03
 
 
 
@@ -68,8 +91,8 @@ def Nim(player1, player2)                                                       
     end
 
     if amount_sticks == 1             #om mängden shticks redan är lika med 1 eller blir 1 när det är sista spelaren tur eller har dragit de sista pinnarna förlorar hen och ett meddelande skickas ut. 
-        puts "Med en pinne kvar förlorar #{player_name(cur_player,player1,player2)}!"
-    elsif amount_sticks == 0        #om det var curr_player som drog de sista pinnarna förlorar hen och ett meddelande skickas ut
+        puts "Med en eller färre pinnar kvar förlorar #{player_name(cur_player,player1,player2)}!"
+    elsif amount_sticks <= 0        #om det var curr_player som drog de sista pinnarna förlorar hen och ett meddelande skickas ut
         puts "#{player_name(other_player(cur_player),player1,player2)} drog alla pinnar som fanns, så du förlorar!"
     end
 end

@@ -70,7 +70,7 @@ def Nim(player1, player2)                                                       
     amount_sticks =  rand(9..14)
     puts amount_sticks
 
-    first_player = rand(1..2)                       #slumpar vem som börjar. här är sista hjälpfunktionen relevant då den ger siffran ett namn
+    first_player = rand(1..2)                       #slumpar vem som börjar. här är sista hjälpfunktionen relevant då den ger siffran ett namn,  returnerar namnet på spelare player_number givet spelarnas namn som de skriver in.
     puts "#{player_name(first_player,player1,player2)} kommer att få börja"
 
     cur_player = first_player

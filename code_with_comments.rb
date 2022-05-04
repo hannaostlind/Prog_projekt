@@ -93,7 +93,7 @@ def Nim(player1, player2)                                                       
         cur_player = other_player(cur_player)         #byter nuvarande spelare till nästa (other_player ger oss andra siffran till det värde den har nu)
     end
 
-    if amount_sticks == 1             #om mängden shticks redan är lika med 1 eller blir 1 när det är sista spelaren tur eller har dragit de sista pinnarna förlorar hen och ett meddelande skickas ut. 
+    if amount_sticks == 1             #om mängden pinnar redan är lika med 1 när det är sista spelarens tur förlorar hen och ett meddelande skickas ut. 
         puts "Med en pinne kvar förlorar #{player_name(cur_player,player1,player2)}!"
     elsif amount_sticks <= 0        #om det var curr_player som drog de sista pinnarna förlorar hen och ett meddelande skickas ut
         puts "#{player_name(other_player(cur_player),player1,player2)} drog alla pinnar som fanns, så du förlorar!"

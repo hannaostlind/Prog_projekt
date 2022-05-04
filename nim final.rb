@@ -1,11 +1,11 @@
 #NIM
- 
+#anteckningar
 # PVP
 # 14 pinnar
 # plocka 1-3 pinnar
 # MÅL = inte plocka sista pinnen
 # slumpa antal pinnar och vilken spelare som börjar
- 
+#slut på anteckningar
  
 # Beskrivning:                                 Spelet Nim går ut på att två spelare tar emot ett antal pinnar och ska sedan turas om med att dra 1-3 pinnar var. Den som drar de sista pinnarna förlorar så det gäller att räkna i huvudet och tänka smart! Spelet fungerar på följande sätt: har två funktioner där den första, nim(), låter spelarna turas om att dra 1-3 pinnar från ett slumpat antal och den andra funktionen, main(), som tar emot spelarnas namn via gets. När antalet pinnar är mindre än eller lika med antingen 0 frågar den om spelarna vill spela igen eller inte. Beroende på svar skickas antingen en hälsning ut eller så kallas nim-funktionen och spelet börjar om.
 #
@@ -13,6 +13,7 @@
 # Argument 2:                                   Integer - talen som slumpmässas i programmet och talen som spelarna skriver in när de ska dra 1-3 pinnar.
 # Argument 3                                    
 # Return                                        Sträng - kommentar med vilken spelare som vunnit i form av output med stränginterpolering samt en del puts för att fråga om information från spelarna.
+
 # Exempel:      
 
 # Hej och välkommen till spelet NIM 
@@ -39,13 +40,15 @@
 #antal pinnar som finns kvar 0
 #FELICIA drog alla pinnar som fanns, så du förlorar!
 #Vill du spela igen? (ja/nej)
-#
+
 # Av:                                           Felicia & Hanna
 # Datum:                                        2022-05-03
 
 
 
-def other_player(cur_player)                    #returnerar den andra spelarens nummer baserat på vilket nummer curr_player har
+
+
+def other_player(cur_player)                    #returnerar den andra spelarens nummer baserat på vilket nummer cur_player har
     if cur_player == 1
         return 2
     else

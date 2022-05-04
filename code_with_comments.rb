@@ -7,7 +7,7 @@
 # slumpa antal pinnar och vilken spelare som börjar
 #slut på anteckningar
  
-# Beskrivning:                                 Spelet Nim går ut på att två spelare tar emot ett antal pinnar och ska sedan turas om med att dra 1-3 pinnar var. Den som drar de sista pinnarna förlorar så det gäller att räkna i huvudet och tänka smart! Spelet fungerar på följande sätt: har två funktioner där den första, nim(), låter spelarna turas om att dra 1-3 pinnar från ett slumpat antal och den andra funktionen, main(), som tar emot spelarnas namn via gets. När antalet pinnar är mindre än eller lika med antingen 0 frågar den om spelarna vill spela igen eller inte. Beroende på svar skickas antingen en hälsning ut eller så kallas nim-funktionen och spelet börjar om.
+# Beskrivning:                                 Spelet Nim går ut på att två spelare tar emot ett antal pinnar och ska sedan turas om med att dra 1-3 pinnar var. Den som drar de sista pinnarna förlorar så det gäller att räkna i huvudet och tänka smart! Spelet fungerar på följande sätt: har två funktioner där den första, nim(), låter spelarna turas om att dra 1-3 pinnar från ett slumpat antal och den andra funktionen, main(), som tar emot spelarnas namn via gets. När antalet pinnar är mindre än eller lika med antingen 1 frågar den om spelarna vill spela igen eller inte. Beroende på svar skickas antingen en hälsning ut eller så kallas nim-funktionen och spelet börjar om.
 #
 # Argument 1:                                   Strängar - med input från användare via gets samt output i form av puts.
 # Argument 2:                                   Integer - talen som slumpmässas i programmet och talen som spelarna skriver in när de ska dra 1-3 pinnar.

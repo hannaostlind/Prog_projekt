@@ -100,20 +100,7 @@ def Nim(player1, player2)
     end
 end
 
-<<<<<<< Updated upstream:nim.rb
 def main()    
-=======
-
-
-
-
-
-
-
-
-
-def main()    #i denna funktion tar vi reda på spelarnas namn genom att kalla på nim-funktionen. Dessutom frågar denna funktion om de vill spela igen eller inte när sista pinnen dragits. beroende på svaret från spelarna kör den isåfall om Nim-funktionen eller skickar ut en puts där man tackar och bockar för att de spelat spelet.
->>>>>>> Stashed changes:test.rb
     
     puts "Hej och välkommen till spelet NIM"                  
  
